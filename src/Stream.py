@@ -11,6 +11,9 @@ sparkSession = SparkSession\
     .master("local[*]")\
     .getOrCreate()
 
+sparkSession.sparkContext.setLogLevel("ERROR")
+sparkSession.conf.set("spark.sql.shuffle.partitions", "5")
+
 """
 Données statiques :
 """
@@ -18,11 +21,13 @@ supermarket = sparkSession\
     .read.format("csv")\
     .option("header", "true")\
     .option("inferSchema", "true")\
-    .load("data/supermarket_sales.csv")
+    .load("../data/supermarket_sales.csv")
 
 supermarket.printSchema()
 
 supermarket_schema = supermarket.schema
+
+supermarket.createOrReplaceTempView("supermarket_table")
 
 """
 Données streaming :
@@ -33,7 +38,7 @@ supermarket_stream = sparkSession\
     .format("csv")\
     .option("maxFilesPerTrigger", "1")\
     .option("header", "true")\
-    .load("data/supermarket_sales.csv")
+    .load("../data/supermarket_sales.csv")
 
 print("Spark is streaming : ", supermarket_stream.isStreaming)
 
@@ -44,6 +49,7 @@ Aggrégations :
 # writeStream.start()
 
 # supermarket_stream.select(count("Invoice ID")).show()
+
 average_rating = supermarket_stream.groupby("Invoice ID")\
     .agg((avg("Rating").alias("Average rating")))\
     .sort(desc("Average rating"))
