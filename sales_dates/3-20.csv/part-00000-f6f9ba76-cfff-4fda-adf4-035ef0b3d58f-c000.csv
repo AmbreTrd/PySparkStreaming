@@ -1,0 +1,16 @@
+Invoice_ID,Branch,City,Customer_type,Gender,Product_line,Unit_price,Quantity,Tax,Total,Date,Time,Payment,cogs,gross_margin_percentage,gross_income,Rating,month_day
+142-63-6033,B,Mandalay,Normal,Male,Home and lifestyle,92.36,5.0,23.09,484.89,3/20/2019,19:17,Ewallet,461.8,4.761904762,23.09,4.9,3-20
+213-72-6612,A,Yangon,Normal,Male,Food and beverages,43.25,2.0,4.325,90.825,3/20/2019,15:56,Cash,86.5,4.761904762,4.325,6.2,3-20
+537-72-0426,C,Naypyitaw,Member,Male,Fashion accessories,70.99,10.0,35.495,745.395,3/20/2019,16:28,Cash,709.9,4.761904762,35.495,5.7,3-20
+828-61-5674,A,Yangon,Member,Male,Sports and travel,44.02,10.0,22.01,462.21,3/20/2019,19:57,Credit card,440.2,4.761904762,22.01,9.6,3-20
+650-98-6268,B,Mandalay,Member,Female,Food and beverages,20.87,3.0,3.1305,65.7405,3/20/2019,13:53,Credit card,62.61,4.761904762,3.1305,8.0,3-20
+632-32-4574,B,Mandalay,Normal,Male,Sports and travel,75.92,8.0,30.368,637.728,3/20/2019,14:14,Cash,607.36,4.761904762,30.368,5.5,3-20
+451-28-5717,C,Naypyitaw,Member,Female,Home and lifestyle,83.17,6.0,24.951,523.971,3/20/2019,11:23,Cash,499.02,4.761904762,24.951,7.3,3-20
+760-90-2357,A,Yangon,Member,Male,Electronic accessories,74.51,6.0,22.353,469.413,3/20/2019,15:08,Ewallet,447.06,4.761904762,22.353,5.0,3-20
+514-37-2845,B,Mandalay,Normal,Male,Fashion accessories,99.25,2.0,9.925,208.425,3/20/2019,13:02,Cash,198.5,4.761904762,9.925,9.0,3-20
+509-29-3912,A,Yangon,Member,Female,Sports and travel,38.72,9.0,17.424,365.904,3/20/2019,12:24,Ewallet,348.48,4.761904762,17.424,4.2,3-20
+436-54-4512,A,Yangon,Member,Female,Food and beverages,91.61,1.0,4.5805,96.1905,3/20/2019,19:44,Cash,91.61,4.761904762,4.5805,9.8,3-20
+182-88-2763,B,Mandalay,Member,Male,Food and beverages,79.91,3.0,11.9865,251.7165,3/20/2019,19:28,Credit card,239.73,4.761904762,11.9865,5.0,3-20
+574-31-8277,B,Mandalay,Member,Male,Fashion accessories,33.63,1.0,1.6815,35.3115,3/20/2019,19:55,Cash,33.63,4.761904762,1.6815,5.6,3-20
+805-86-0265,A,Yangon,Normal,Male,Home and lifestyle,93.96,9.0,42.282,887.922,3/20/2019,11:32,Cash,845.64,4.761904762,42.282,9.8,3-20
+102-06-2002,C,Naypyitaw,Member,Male,Sports and travel,25.25,5.0,6.3125,132.5625,3/20/2019,17:52,Cash,126.25,4.761904762,6.3125,6.1,3-20
