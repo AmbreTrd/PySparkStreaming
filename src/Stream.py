@@ -49,10 +49,10 @@ Aggrégations :
 # writeStream.start()
 
 # supermarket_stream.select(count("Invoice ID")).show()
-
-average_rating = supermarket_stream.groupby("Invoice ID")\
-    .agg((avg("Rating").alias("Average rating")))\
-    .sort(desc("Average rating"))
+print("QUERY average_rating start")
+average_rating = supermarket_stream.groupby("Invoice_ID")\
+    .agg((avg("Rating").alias("Average_rating")))\
+    .sort(desc("Average_rating"))
 
 query = average_rating\
     .writeStream\
@@ -60,13 +60,14 @@ query = average_rating\
     .outputMode("complete")\
     .start()
 
-query.stop()
+# TODO : afficher le résultat de query : average_rating
+print("QUERY average_rating end")
 
 
 total_price_calculated = supermarket_stream.selectExpr(
-    "Invoice ID", "(Unit price * Quantity) as (Total cost)")\
-    .groupBy(col("Invoice ID"))\
-    .sum("Total cost")
+    "Invoice_ID", "(Unit_price * Quantity) as (Total_cost)")\
+    .groupBy(col("Invoice_ID"))\
+    .sum("Total_cost")
 
 total_price_calculated.writeStream\
     .format("memory")\
